@@ -17,7 +17,7 @@ df = pd.DataFrame(data)  # Verileri pandas DataFrame yapısına dönüştürüyo
 X = df[["gunluk_study_saati", "devamsizlik_gunu", "vize_notu"]]  # Özellikler (input)
 y = df["final_notu"]  # Hedef değişken (output)
 
-# Veriyi eğitim ve test seti olarak ayırıyoruz (70% eğitim, 30% test)
+# Veriyi eğitim ve test seti olarak ayırıyoruz
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=45)
 
 # Lineer regresyon modelini oluşturuyoruz
